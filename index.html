@@ -120,11 +120,15 @@ footer{padding:3rem 5vw;border-top:1px solid var(--line);display:flex;justify-co
 <section id="kontakt" class="dark"><div class="wrap contact"><div class="r"><div class="eyebrow">Kontakt</div><h2>Audienz anfragen</h2><div class="divider"></div>
 <p class="serif" style="font-size:1.25rem;color:#d6cdca">Stell dich mit Respekt vor. Erzähl mir von deiner Erfahrung, deinen Wünschen und deinen Grenzen. Ich antworte nur auf ernst gemeinte Anfragen.</p>
 <div class="frame" style="margin-top:2.5rem;max-width:320px"><img src="img/9.jpg" alt=""></div></div>
-<form class="r" onsubmit="event.preventDefault();this.innerHTML='<h3 style=&quot;color:var(--red2)&quot;>Danke.</h3><p class=serif style=font-size:1.3rem>Deine Anfrage ist eingegangen. Du hörst von mir, wenn ich es für richtig halte.</p>'">
-<div><label>Name oder Alias</label><input required></div>
-<div><label>E-Mail</label><input type="email" required></div>
-<div><label>Interesse</label><select><option>Session im Studio</option><option>Erziehung</option><option>Online-Führung</option><option>Erstgespräch</option></select></div>
-<div><label>Deine Vorstellung</label><textarea rows="5" required></textarea></div>
+<form class="r" action="https://formsubmit.co/sissyfelicity20@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Neue Anfrage über ladyabraxa.github.io">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://ladyabraxa.github.io/danke.html">
+<input type="text" name="_honey" style="display:none">
+<div><label>Name oder Alias</label><input name="Name" required></div>
+<div><label>E-Mail</label><input type="email" name="email" required></div>
+<div><label>Interesse</label><select name="Interesse"><option>Session im Studio</option><option>Erziehung</option><option>Online-Führung</option><option>Erstgespräch</option></select></div>
+<div><label>Deine Vorstellung</label><textarea name="Nachricht" rows="5" required></textarea></div>
 <label class="chk"><input type="checkbox" required> Ich bin mindestens 18 Jahre alt und habe die Regeln gelesen.</label>
 <button class="btn f">Anfrage senden</button></form></div></section>
 
