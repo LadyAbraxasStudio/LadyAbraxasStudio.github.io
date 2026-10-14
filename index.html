@@ -1,55 +1,141 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lady Abraxa</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<title>Lady Abraxa | Dominanz mit Stil</title>
+<meta name="description" content="Lady Abraxa - erfahrene Dominante. Sessions, Erziehung und Online-Führung. Diskret, einvernehmlich, stilvoll.">
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0a;--card:#141012;--red:#8b0000;--red2:#c1121f;--txt:#e8e0e0;--mut:#9a8f90}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--txt);font-family:'Cormorant Garamond',serif;font-size:1.2rem;line-height:1.6}
-a{color:var(--red2);text-decoration:none}
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:1rem 2rem;background:rgba(10,10,10,.85);border-bottom:1px solid #2a0a0d;z-index:9}
-nav .logo{font-family:Cinzel;letter-spacing:.3em;color:var(--red2)}
-nav a{margin-left:1.5rem;font-family:Cinzel;font-size:.85rem;letter-spacing:.15em;color:var(--txt)}
-nav a:hover{color:var(--red2)}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
-background:radial-gradient(ellipse at center,#3a0008 0%,#0a0a0a 70%)}
-.hero h1{font-family:Cinzel;font-size:clamp(2.5rem,8vw,6rem);letter-spacing:.2em;text-shadow:0 0 30px #c1121f88}
-.hero p{font-style:italic;color:var(--mut);margin:1rem 0 2rem;font-size:1.5rem}
-.btn{display:inline-block;padding:.8rem 2.2rem;border:1px solid var(--red2);font-family:Cinzel;letter-spacing:.2em;color:var(--txt);transition:.3s}
-.btn:hover{background:var(--red);}
-section{max-width:1100px;margin:auto;padding:6rem 2rem}
-h2{font-family:Cinzel;color:var(--red2);letter-spacing:.25em;text-align:center;margin-bottom:3rem;font-size:2rem}
-.about{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center}
-.ph{background:linear-gradient(135deg,#1a0a0d,#2a0a0d);border:1px solid #3a0a10;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;color:var(--mut);font-family:Cinzel;font-size:.8rem;letter-spacing:.2em}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-.card{background:var(--card);border:1px solid #2a0a0d;padding:2rem;transition:.3s}
-.card:hover{border-color:var(--red2);transform:translateY(-4px)}
-.card h3{font-family:Cinzel;letter-spacing:.1em;margin-bottom:.7rem}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
-.rules li{list-style:none;padding:.6rem 0;border-bottom:1px solid #2a0a0d}
-.rules li::before{content:"✦ ";color:var(--red2)}
-form{display:grid;gap:1rem;max-width:600px;margin:auto}
-input,textarea{background:var(--card);border:1px solid #3a0a10;color:var(--txt);padding:.9rem;font-family:inherit;font-size:1rem}
-footer{text-align:center;padding:2rem;color:var(--mut);border-top:1px solid #2a0a0d;font-size:.9rem}
-@media(max-width:700px){.about{grid-template-columns:1fr}nav a{margin-left:.8rem}}
+:root{--bg:#070607;--bg2:#0e0b0c;--card:#130f10;--line:#2b1418;--red:#9b111e;--red2:#d4202f;--gold:#c9a96e;--txt:#ece6e3;--mut:#9d9291}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
+.serif{font-family:'Cormorant Garamond',serif}
+.eyebrow{font-family:Cinzel;font-size:.75rem;letter-spacing:.4em;color:var(--gold);text-transform:uppercase}
+h1,h2,h3{font-family:Cinzel;font-weight:400;letter-spacing:.12em}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:.6rem 0 1.2rem}
+.divider{width:60px;height:1px;background:var(--red2);margin:1.2rem 0}
+.center{text-align:center}.center .divider{margin:1.2rem auto}
+nav{position:fixed;inset:0 0 auto 0;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5vw;z-index:20;transition:.4s}
+nav.s{background:rgba(7,6,7,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.8rem 5vw}
+.logo{font-family:Cinzel;letter-spacing:.35em;font-size:1.05rem}.logo b{color:var(--red2);font-weight:400}
+.links a{margin-left:2rem;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--mut);transition:.3s}.links a:hover{color:var(--txt)}
+.burger{display:none;background:none;border:0;color:var(--txt);font-size:1.6rem}
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;overflow:hidden}
+.hero .txt{padding:8rem 5vw 4rem;z-index:2}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:1.05;letter-spacing:.08em}
+.hero h1 span{display:block;color:var(--red2);font-size:.45em;letter-spacing:.5em;margin-bottom:.8rem}
+.hero p{font-family:'Cormorant Garamond';font-style:italic;font-size:1.5rem;color:var(--mut);max-width:30rem;margin:1.5rem 0 2.5rem}
+.hero .pic{position:relative;height:100vh}
+.hero .pic::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,transparent 35%,transparent 80%,var(--bg) 100%),linear-gradient(0deg,var(--bg),transparent 30%);z-index:1}
+.btn{display:inline-block;padding:1rem 2.4rem;font-family:Cinzel;font-size:.78rem;letter-spacing:.3em;border:1px solid var(--red2);transition:.35s;cursor:pointer;background:none;color:var(--txt)}
+.btn.f{background:var(--red)}.btn:hover{background:var(--red2);border-color:var(--red2)}
+.btn.g{border-color:#444;margin-left:1rem}.btn.g:hover{background:#222;border-color:#888}
+section{padding:7rem 5vw}.wrap{max-width:1200px;margin:auto}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.frame{position:relative;aspect-ratio:3/4}.frame::after{content:"";position:absolute;inset:1.2rem -1.2rem -1.2rem 1.2rem;border:1px solid var(--gold);opacity:.4;z-index:-1}
+.about p{font-family:'Cormorant Garamond';font-size:1.3rem;color:#d6cdca;margin-bottom:1.2rem}
+.sig{font-family:'Cormorant Garamond';font-style:italic;font-size:2rem;color:var(--red2);margin-top:1.5rem}
+.stats{display:flex;gap:3rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:2rem}
+.stats div{font-family:Cinzel;font-size:1.6rem}.stats small{display:block;font-family:Inter;font-size:.65rem;letter-spacing:.25em;color:var(--mut);text-transform:uppercase}
+.dark{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:3rem}
+.card{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);min-height:420px;display:flex;flex-direction:column;justify-content:flex-end}
+.card img{position:absolute;inset:0;opacity:.45;transition:.8s}.card:hover img{opacity:.6;transform:scale(1.05)}
+.card .in{position:relative;padding:2rem;background:linear-gradient(0deg,rgba(7,6,7,.95) 40%,transparent)}
+.card .n{font-family:Cinzel;color:var(--gold);font-size:.75rem;letter-spacing:.3em}
+.card h3{font-size:1.3rem;margin:.4rem 0 .6rem}.card p{font-size:.92rem;color:var(--mut)}
+.wide{height:60vh;position:relative}.wide img{filter:brightness(.55)}
+.wide .q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.wide .q p{font-family:'Cormorant Garamond';font-style:italic;font-size:clamp(1.6rem,3.5vw,2.8rem);max-width:50rem}
+.gal{columns:3 280px;column-gap:1rem;margin-top:3rem}
+.gal img{margin-bottom:1rem;height:auto;cursor:zoom-in;filter:grayscale(.15);transition:.4s;break-inside:avoid}.gal img:hover{filter:none;opacity:.9}
+.studio{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.studio ul{list-style:none;margin-top:1.5rem}.studio li{padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.95rem;color:#cfc6c3}
+.studio li::before{content:"◆";color:var(--red2);font-size:.6rem;margin-right:1rem;vertical-align:middle}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;margin-top:3rem}
+.rules div{border-left:1px solid var(--red2);padding-left:1.5rem}.rules h3{font-size:.95rem;margin-bottom:.5rem}.rules p{font-size:.9rem;color:var(--mut)}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem}
+form{display:grid;gap:1rem}label{font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mut)}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #3a2226;color:var(--txt);padding:.8rem 0;font:inherit;font-size:1rem;outline:none;transition:.3s}
+input:focus,textarea:focus,select:focus{border-color:var(--red2)}select option{background:#111}
+.chk{display:flex;gap:.7rem;align-items:flex-start;font-size:.85rem;color:var(--mut)}.chk input{width:auto;margin-top:.35rem}
+footer{padding:3rem 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.75rem;color:var(--mut);letter-spacing:.1em}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}#lb img{max-width:92vw;max-height:92vh;width:auto;height:auto;object-fit:contain}
+#age{position:fixed;inset:0;background:radial-gradient(circle,#1a0507,#000 70%);z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+#age h2{font-size:2rem}#age p{color:var(--mut);max-width:28rem;margin:1rem auto 2rem}
+.r{opacity:0;transform:translateY(30px);transition:1s}.r.v{opacity:1;transform:none}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.hero .pic{position:absolute;inset:0;height:auto;opacity:.45}.hero .txt{padding-top:10rem}
+.about,.studio,.contact{grid-template-columns:1fr;gap:3rem}.links{display:none;position:absolute;top:100%;left:0;right:0;background:#070607;flex-direction:column;padding:1rem 5vw;border-bottom:1px solid var(--line)}
+.links.o{display:flex}.links a{margin:0;padding:.9rem 0}.burger{display:block}.btn.g{margin:1rem 0 0}.stats{gap:1.5rem}}
 </style></head><body>
-<nav><span class="logo">ABRAXA</span><div><a href="#about">Über Mich</a><a href="#services">Angebote</a><a href="#gallery">Galerie</a><a href="#contact">Kontakt</a></div></nav>
-<div class="hero"><h1>LADY ABRAXA</h1><p>Eleganz. Kontrolle. Hingabe muss verdient werden.</p><a class="btn" href="#contact">Audienz anfragen</a></div>
-<section id="about"><h2>DIE LADY</h2><div class="about"><div class="ph">FOTO</div><div>
-<p>[Beispieltext - durch ihre eigenen Worte ersetzen] Ich bin eine Dominante, die Absicht, Vertrauen und die stille Macht eines wohlplatzierten Befehls schätzt. Meine Sessions werden mit Sorgfalt und einem klaren Verständnis von Grenzen gestaltet.</p><br>
-<p>Wer mich sucht, kommt mit Respekt, Ehrlichkeit und der Bereitschaft, sich führen zu lassen. Einvernehmlichkeit und Diskretion sind die Grundlage von allem, was ich anbiete.</p></div></div></section>
-<section id="services"><h2>ANGEBOTE</h2><div class="grid">
-<div class="card"><h3>Sessions</h3><p>Persönliche Erlebnisse nach Maß, im Voraus vereinbart.</p></div>
-<div class="card"><h3>Online-Führung</h3><p>Strukturierte Aufgaben und Kontrolle aus der Ferne.</p></div>
-<div class="card"><h3>Erziehung</h3><p>Langfristige Vereinbarungen für die Hingebungsvollen.</p></div>
-<div class="card"><h3>Erstgespräch</h3><p>Ein erstes Gespräch über Wünsche und Grenzen.</p></div>
-</div></section>
-<section id="gallery"><h2>GALERIE</h2><div class="gallery"><div class="ph">FOTO</div><div class="ph">FOTO</div><div class="ph">FOTO</div><div class="ph">FOTO</div></div></section>
-<section><h2>REGELN</h2><ul class="rules">
-<li>Nur für Erwachsene (18+).</li><li>Kontaktaufnahme nur mit Respekt und einer klaren Vorstellung.</li><li>Grenzen und Safewords werden vorher besprochen.</li><li>Diskretion ist gegenseitig und absolut.</li><li>Tribute und Anzahlungen bestätigen eine Buchung.</li></ul></section>
-<section id="contact"><h2>AUDIENZ ANFRAGEN</h2><form onsubmit="event.preventDefault();alert('Danke. Deine Anfrage ist eingegangen.')">
-<input placeholder="Name oder Alias" required><input type="email" placeholder="E-Mail" required>
-<textarea rows="5" placeholder="Stell dich vor und beschreibe, was du suchst" required></textarea>
-<button class="btn" style="background:none;cursor:pointer">Absenden</button></form></section>
-<footer>© 2026 Lady Abraxa · Nur für Erwachsene · Alle Anfragen werden vertraulich behandelt</footer>
-</body></html>
+<div id="age"><div><div class="eyebrow">Nur für Erwachsene</div><h2>LADY ABRAXA</h2><p>Diese Seite enthält Inhalte für Erwachsene. Mit dem Betreten bestätigst du, dass du mindestens 18 Jahre alt bist.</p>
+<button class="btn f" onclick="enter()">Ich bin 18+ · Eintreten</button> <a class="btn g" href="https://www.google.com">Verlassen</a></div></div>
+
+<nav id="nav"><a class="logo" href="#">LADY <b>ABRAXA</b></a><button class="burger" onclick="document.querySelector('.links').classList.toggle('o')">☰</button>
+<div class="links"><a href="#about">Über Mich</a><a href="#angebote">Angebote</a><a href="#studio">Studio</a><a href="#galerie">Galerie</a><a href="#regeln">Regeln</a><a href="#kontakt">Kontakt</a></div></nav>
+
+<header class="hero"><div class="txt"><div class="eyebrow">Dominanz · Eleganz · Kontrolle</div>
+<h1><span>DIE HERRIN</span>LADY<br>ABRAXA</h1>
+<p>Hingabe wird nicht verlangt. Sie wird verdient, geformt und mit Stil belohnt.</p>
+<a class="btn f" href="#kontakt">Audienz anfragen</a><a class="btn g" href="#angebote">Angebote</a></div>
+<div class="pic"><img src="img/8.jpg" alt="Lady Abraxa"></div></header>
+
+<section id="about"><div class="wrap about"><div class="frame r"><img src="img/11.jpg" alt="Lady Abraxa im Studio"></div>
+<div class="r"><div class="eyebrow">Über Mich</div><h2>Die Lady</h2><div class="divider"></div>
+<p>Ich bin eine erfahrene Dominante, die Absicht, Vertrauen und die stille Macht eines wohlplatzierten Befehls schätzt. Jede Session wird mit Sorgfalt gestaltet, mit einem klaren Verständnis von Grenzen und einem Auge fürs Detail.</p>
+<p>Wer mich sucht, kommt mit Respekt, Ehrlichkeit und der Bereitschaft, sich führen zu lassen. Einvernehmlichkeit und absolute Diskretion sind die Grundlage von allem, was ich anbiete.</p>
+<div class="sig">Lady Abraxa</div>
+<div class="stats"><div>18+<small>Nur Erwachsene</small></div><div>100%<small>Diskretion</small></div><div>SSC<small>Sicher · Einvernehmlich</small></div></div></div></div></section>
+
+<section id="angebote" class="dark"><div class="wrap"><div class="center r"><div class="eyebrow">Was ich biete</div><h2>Angebote</h2><div class="divider"></div></div>
+<div class="svc">
+<div class="card r"><img src="img/2.jpg" alt=""><div class="in"><div class="n">I</div><h3>Sessions</h3><p>Persönliche Erlebnisse nach Maß in meinem voll ausgestatteten Studio, im Voraus vereinbart.</p></div></div>
+<div class="card r"><img src="img/15.jpg" alt=""><div class="in"><div class="n">II</div><h3>Erziehung</h3><p>Langfristige Vereinbarungen für die Hingebungsvollen. Struktur, Regeln und Fortschritt.</p></div></div>
+<div class="card r"><img src="img/5.jpg" alt=""><div class="in"><div class="n">III</div><h3>Online-Führung</h3><p>Aufgaben, Kontrolle und Rechenschaft aus der Ferne, per Nachricht oder Call.</p></div></div>
+<div class="card r"><img src="img/14.jpg" alt=""><div class="in"><div class="n">IV</div><h3>Erstgespräch</h3><p>Ein ruhiges erstes Gespräch über Wünsche, Erfahrung und Grenzen.</p></div></div>
+</div></div></section>
+
+<div class="wide"><img src="img/10.jpg" alt="Das Studio"><div class="q"><p>„Wahre Macht flüstert. Sie muss nie schreien.“</p></div></div>
+
+<section id="studio"><div class="wrap studio"><div class="r"><div class="eyebrow">Mein Reich</div><h2>Das Studio</h2><div class="divider"></div>
+<p class="serif" style="font-size:1.25rem;color:#d6cdca">Ein privater, gepflegter Raum, eingerichtet für Sessions jeder Intensität. Kerzenlicht, schwarz-weißer Boden und professionelle Ausstattung.</p>
+<ul><li>Andreaskreuz</li><li>Sling mit Ketten</li><li>Strafbank in Rot</li><li>Seile, Gerten und Paddles</li><li>Toys und Maschine</li><li>Klinik-Utensilien</li></ul></div>
+<div class="frame r"><img src="img/6.jpg" alt="Strafbank"></div></div></section>
+
+<section id="galerie" class="dark"><div class="wrap"><div class="center r"><div class="eyebrow">Eindrücke</div><h2>Galerie</h2><div class="divider"></div></div>
+<div class="gal">
+<img src="img/7.jpg" alt=""><img src="img/1.jpg" alt=""><img src="img/12.jpg" alt=""><img src="img/9.jpg" alt=""><img src="img/13.jpg" alt=""><img src="img/3.jpg" alt=""><img src="img/4.jpg" alt=""><img src="img/2.jpg" alt=""><img src="img/14.jpg" alt=""><img src="img/5.jpg" alt=""><img src="img/15.jpg" alt=""><img src="img/6.jpg" alt="">
+</div></div></section>
+
+<section id="regeln"><div class="wrap"><div class="center r"><div class="eyebrow">Etikette</div><h2>Regeln</h2><div class="divider"></div></div>
+<div class="rules">
+<div class="r"><h3>I · Volljährigkeit</h3><p>Ausschließlich für Erwachsene ab 18 Jahren.</p></div>
+<div class="r"><h3>II · Respekt</h3><p>Kontaktaufnahme nur höflich und mit einer klaren Vorstellung deiner Person.</p></div>
+<div class="r"><h3>III · Grenzen</h3><p>Tabus und Safewords werden vor jeder Session gemeinsam besprochen.</p></div>
+<div class="r"><h3>IV · Diskretion</h3><p>Vertraulichkeit ist gegenseitig und absolut.</p></div>
+<div class="r"><h3>V · Tribut</h3><p>Ein Tribut bzw. eine Anzahlung bestätigt deinen Termin.</p></div>
+<div class="r"><h3>VI · Hygiene</h3><p>Gepflegtes Erscheinen ist selbstverständlich.</p></div>
+</div></div></section>
+
+<section id="kontakt" class="dark"><div class="wrap contact"><div class="r"><div class="eyebrow">Kontakt</div><h2>Audienz anfragen</h2><div class="divider"></div>
+<p class="serif" style="font-size:1.25rem;color:#d6cdca">Stell dich mit Respekt vor. Erzähl mir von deiner Erfahrung, deinen Wünschen und deinen Grenzen. Ich antworte nur auf ernst gemeinte Anfragen.</p>
+<div class="frame" style="margin-top:2.5rem;max-width:320px"><img src="img/9.jpg" alt=""></div></div>
+<form class="r" onsubmit="event.preventDefault();this.innerHTML='<h3 style=&quot;color:var(--red2)&quot;>Danke.</h3><p class=serif style=font-size:1.3rem>Deine Anfrage ist eingegangen. Du hörst von mir, wenn ich es für richtig halte.</p>'">
+<div><label>Name oder Alias</label><input required></div>
+<div><label>E-Mail</label><input type="email" required></div>
+<div><label>Interesse</label><select><option>Session im Studio</option><option>Erziehung</option><option>Online-Führung</option><option>Erstgespräch</option></select></div>
+<div><label>Deine Vorstellung</label><textarea rows="5" required></textarea></div>
+<label class="chk"><input type="checkbox" required> Ich bin mindestens 18 Jahre alt und habe die Regeln gelesen.</label>
+<button class="btn f">Anfrage senden</button></form></div></section>
+
+<footer><span>© 2026 LADY ABRAXA</span><span>Nur für Erwachsene · Alle Anfragen vertraulich</span></footer>
+<div id="lb" onclick="this.style.display='none'"><img alt=""></div>
+<script>
+function enter(){document.getElementById('age').style.display='none';sessionStorage.a=1}
+if(sessionStorage.a)document.getElementById('age').style.display='none';
+addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>40));
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('v')),{threshold:.12});
+document.querySelectorAll('.r').forEach(el=>io.observe(el));
+document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.querySelector('.links').classList.remove('o'));
+document.querySelectorAll('.gal img').forEach(i=>i.onclick=()=>{const l=document.getElementById('lb');l.querySelector('img').src=i.src;l.style.display='flex'});
+</script></body></html>
