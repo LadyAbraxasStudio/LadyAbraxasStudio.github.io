@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lady Abraxa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--card:#141012;--red:#8b0000;--red2:#c1121f;--txt:#e8e0e0;--mut:#9a8f90}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:'Cormorant Garamond',serif;font-size:1.2rem;line-height:1.6}
+a{color:var(--red2);text-decoration:none}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:1rem 2rem;background:rgba(10,10,10,.85);border-bottom:1px solid #2a0a0d;z-index:9}
+nav .logo{font-family:Cinzel;letter-spacing:.3em;color:var(--red2)}
+nav a{margin-left:1.5rem;font-family:Cinzel;font-size:.85rem;letter-spacing:.15em;color:var(--txt)}
+nav a:hover{color:var(--red2)}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+background:radial-gradient(ellipse at center,#3a0008 0%,#0a0a0a 70%)}
+.hero h1{font-family:Cinzel;font-size:clamp(2.5rem,8vw,6rem);letter-spacing:.2em;text-shadow:0 0 30px #c1121f88}
+.hero p{font-style:italic;color:var(--mut);margin:1rem 0 2rem;font-size:1.5rem}
+.btn{display:inline-block;padding:.8rem 2.2rem;border:1px solid var(--red2);font-family:Cinzel;letter-spacing:.2em;color:var(--txt);transition:.3s}
+.btn:hover{background:var(--red);}
+section{max-width:1100px;margin:auto;padding:6rem 2rem}
+h2{font-family:Cinzel;color:var(--red2);letter-spacing:.25em;text-align:center;margin-bottom:3rem;font-size:2rem}
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:center}
+.ph{background:linear-gradient(135deg,#1a0a0d,#2a0a0d);border:1px solid #3a0a10;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;color:var(--mut);font-family:Cinzel;font-size:.8rem;letter-spacing:.2em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.card{background:var(--card);border:1px solid #2a0a0d;padding:2rem;transition:.3s}
+.card:hover{border-color:var(--red2);transform:translateY(-4px)}
+.card h3{font-family:Cinzel;letter-spacing:.1em;margin-bottom:.7rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.rules li{list-style:none;padding:.6rem 0;border-bottom:1px solid #2a0a0d}
+.rules li::before{content:"✦ ";color:var(--red2)}
+form{display:grid;gap:1rem;max-width:600px;margin:auto}
+input,textarea{background:var(--card);border:1px solid #3a0a10;color:var(--txt);padding:.9rem;font-family:inherit;font-size:1rem}
+footer{text-align:center;padding:2rem;color:var(--mut);border-top:1px solid #2a0a0d;font-size:.9rem}
+@media(max-width:700px){.about{grid-template-columns:1fr}nav a{margin-left:.8rem}}
+</style></head><body>
+<nav><span class="logo">ABRAXA</span><div><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div></nav>
+<div class="hero"><h1>LADY ABRAXA</h1><p>Elegance. Control. Devotion earned.</p><a class="btn" href="#contact">Request an Audience</a></div>
+<section id="about"><h2>THE LADY</h2><div class="about"><div class="ph">PHOTO</div><div>
+<p>[Sample text - replace with her own words] I am a Dominant who values intention, trust, and the quiet power of a well-placed command. My sessions are crafted with care and a clear understanding of limits.</p><br>
+<p>Those who seek me should arrive with respect, honesty, and a willingness to be guided. Consent and discretion are the foundation of everything I offer.</p></div></div></section>
+<section id="services"><h2>OFFERINGS</h2><div class="grid">
+<div class="card"><h3>Sessions</h3><p>Tailored in-person experiences, agreed in advance.</p></div>
+<div class="card"><h3>Online Guidance</h3><p>Structured tasks and check-ins from afar.</p></div>
+<div class="card"><h3>Training</h3><p>Ongoing arrangements for the dedicated.</p></div>
+<div class="card"><h3>Consultations</h3><p>A first conversation to discuss interests and limits.</p></div>
+</div></section>
+<section id="gallery"><h2>GALLERY</h2><div class="gallery"><div class="ph">PHOTO</div><div class="ph">PHOTO</div><div class="ph">PHOTO</div><div class="ph">PHOTO</div></div></section>
+<section><h2>PROTOCOL</h2><ul class="rules">
+<li>Adults (18+) only.</li><li>Approach with respect and a clear introduction.</li><li>Limits and safewords are discussed before anything begins.</li><li>Discretion is mutual and absolute.</li><li>Tributes and deposits confirm a booking.</li></ul></section>
+<section id="contact"><h2>REQUEST AN AUDIENCE</h2><form onsubmit="event.preventDefault();alert('Thank you. Your request has been received.')">
+<input placeholder="Name or alias" required><input type="email" placeholder="Email" required>
+<textarea rows="5" placeholder="Introduce yourself and what you seek" required></textarea>
+<button class="btn" style="background:none;cursor:pointer">Submit</button></form></section>
+<footer>© 2026 Lady Abraxa · Adults only · All requests held in confidence</footer>
+</body></html>
